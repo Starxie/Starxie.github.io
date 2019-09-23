@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6{
     text-align:left;
 }
 .listItem {
-  font-size:135%;
+  font-size:165%;
 }
 img {
   display: block;
@@ -32,41 +32,41 @@ img {
 <body class = title; >
 <div id = 'content' >
 
-<p id = "GFG_UP" style =
-    "font-size: 16px; font-weight: bold;">
-</p>
-
-<button onclick = "gfg_Run()">
+<p id = "GFG_UP" style = 
+    "font-size: 16px; font-weight: bold;">      
+</p> 
+  
+<button onclick = "gfg_Run()">  
     Enable
-</button>
-<button onclick = "gfg_Run2()">
+</button> 
+<button onclick = "gfg_Run2()">  
     Disable
-</button>
-
-<p id = "GFG_DOWN" style =
-  " font-size: 20px; font-weight: bold;">
-</p>
-
-<script>
-    var el_up = document.getElementById("GFG_UP");
-    var el_down = document.getElementById("GFG_DOWN");
-    var str = "Click on button to enable/disable dark mode";
-
-    el_up.innerHTML = str;
-
-    function changeColor(color) {
-        document.body.style.background = color;
+</button> 
+  
+<p id = "GFG_DOWN" style = 
+  " font-size: 20px; font-weight: bold;"> 
+</p> 
+  
+<script> 
+    var el_up = document.getElementById("GFG_UP"); 
+    var el_down = document.getElementById("GFG_DOWN"); 
+    var str = "Click on button to enable/disable dark mode"; 
+  
+    el_up.innerHTML = str; 
+  
+    function changeColor(color) { 
+        document.body.style.background = color; 
+    } 
+      
+    function gfg_Run() { 
+        changeColor('#767D92'); 
+        
     }
-
-    function gfg_Run() {
-        changeColor('#767D92');
-
-    }
-    function gfg_Run2() {
-      changeColor('white');
-
-  }
-</script>
+    function gfg_Run2() { 
+      changeColor('white'); 
+      
+  }                
+</script>  
 
 
 
@@ -77,16 +77,16 @@ img {
 <h1 style="font-size:30px; text-align:center;">Student#: 500884336</h1>
 
 
-<p style="font-size:175%;"class = center>My Hobbies
+<p style="font-size:195%;"class = center>My Hobbies
   <ul class = center>
-    <li style="font-size:150%;">Video Games</li>
+    <li style="font-size:170%;">Video Games</li>
       <ul>
       <li class = listItem>League of Legends</li>
       <li class = listItem>Pok&eacute;mon</li>
       <li class = listItem>Smash Bros</li>
       </ul>
-    <li style="font-size:150%;">Weight Lifting</li>
-    <li style="font-size:150%;">Cooking</li>
+    <li style="font-size:170%;">Weight Lifting</li>
+    <li style="font-size:170%;">Cooking</li>
   </ul>
 </p>
 </div>
@@ -97,12 +97,12 @@ img {
     var passinput = prompt("Enter the password")
     if(passinput == pass){
         x.style.visibility = 'visible';
-      }
+      } 
       else {
         x.style.visibility = 'hidden';
         alert("access denied");
       }
-
+    
   </script>
 
 </body>
