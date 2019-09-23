@@ -5,7 +5,7 @@
 
 
     h1, h2, h3, h4, h5, h6{
-      line-height: 15px; 
+      line-height: 15px;
     }
 
 .title {
@@ -30,41 +30,41 @@ img {
 </head>
 <body class = title; >
 
-    <p id = "GFG_UP" style = 
-    "font-size: 16px; font-weight: bold;">      
-</p> 
-  
-<button onclick = "gfg_Run()">  
+    <p id = "GFG_UP" style =
+    "font-size: 16px; font-weight: bold;">
+</p>
+
+<button onclick = "gfg_Run()">
     Enable
-</button> 
-<button onclick = "gfg_Run2()">  
+</button>
+<button onclick = "gfg_Run2()">
     Disable
-</button> 
-  
-<p id = "GFG_DOWN" style = 
-  " font-size: 20px; font-weight: bold;"> 
-</p> 
-  
-<script> 
-    var el_up = document.getElementById("GFG_UP"); 
-    var el_down = document.getElementById("GFG_DOWN"); 
-    var str = "Click on button to change to dark mode"; 
-  
-    el_up.innerHTML = str; 
-  
-    function changeColor(color) { 
-        document.body.style.background = color; 
-    } 
-      
-    function gfg_Run() { 
-        changeColor('#767D92'); 
-        el_down.innerHTML = "Dark Mode Enabled"; 
+</button>
+
+<p id = "GFG_DOWN" style =
+  " font-size: 20px; font-weight: bold;">
+</p>
+
+<script>
+    var el_up = document.getElementById("GFG_UP");
+    var el_down = document.getElementById("GFG_DOWN");
+    var str = "Click on button to change to dark mode";
+
+    el_up.innerHTML = str;
+
+    function changeColor(color) {
+        document.body.style.background = color;
     }
-    function gfg_Run2() { 
-      changeColor('white'); 
-      el_down.innerHTML = "Dark Mode Disabled"; 
-  }                
-</script>  
+
+    function gfg_Run() {
+        changeColor('#767D92');
+        el_down.innerHTML = "Dark Mode Enabled";
+    }
+    function gfg_Run2() {
+      changeColor('white');
+      el_down.innerHTML = "Dark Mode Disabled";
+  }
+</script>
 
 
 
