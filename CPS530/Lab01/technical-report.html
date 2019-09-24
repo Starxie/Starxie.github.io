@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lab1 Technical Report</title>
+<style>
+.code{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center {
+    width:400px;
+      margin:0 auto;
+      text-align:left;
+  }
+</style>
+</head>
+<body>
+<p><a href="index.html">technical report Link</a></p>
+
+<h1 class="center">Full Code:</h1>
+<textarea class="code" cols="70" rows="30">
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <title>Justtin Hoang Labs</title>
+        <style>
+        
+        
+        h1, h2, h3, h4, h5, h6{
+              line-height: 15px; 
+            }
+        
+        .title {
+          position: fixed;
+          top: 10%;
+          left: 35%;
+        }
+        .center {
+          width:200px;
+            margin:0 auto;
+            text-align:left;
+        }
+        .listItem {
+          font-size:90%;
+        }
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        </style>
+        </head>
+        
+        <body class = title; >
+        <div id = 'content' >
+        
+        <p id = "GFG_UP" style = 
+            "font-size: 16px; font-weight: bold;">      
+        </p> 
+          
+        <button onclick = "gfg_Run()">  
+            Enable
+        </button> 
+        <button onclick = "gfg_Run2()">  
+            Disable
+        </button> 
+          
+        <p id = "GFG_DOWN" style = 
+          " font-size: 20px; font-weight: bold;"> 
+        </p> 
+          
+        <script> 
+            var el_up = document.getElementById("GFG_UP"); 
+            var el_down = document.getElementById("GFG_DOWN"); 
+            var str = "Click on button to enable/disable dark mode"; 
+          
+            el_up.innerHTML = str; 
+          
+            function changeColor(color) { 
+                document.body.style.background = color; 
+            } 
+              
+            function gfg_Run() { 
+                changeColor('#767D92'); 
+                
+            }
+            function gfg_Run2() { 
+              changeColor('white'); 
+              
+          }                
+        </script>  
+        
+        
+        
+        <h2 style="text-align:center; font-size:40px;">This is my first web page. </h2>
+        <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" alt="Starry Night" class = center style="width:525px;height:350px; ">
+        
+        <h1 style="font-size:30px; text-align:center;">Name: Justtin Hoang</h1>
+        <h1 style="font-size:30px; text-align:center;">Student#: 500884336</h1>
+        
+        <p style="font-size:195%;"class=center>My Hobbies
+          <ul class = center>
+            <li style="font-size:200%;">Video Games
+           
+              <ul>
+              <li class = listItem>League of Legends</li>
+              <li class = listItem>Pok&eacute;mon</li>
+              <li class = listItem>Smash Bros</li>
+              </ul>
+            </li>
+            <li style="font-size:200%;">Weight Lifting</li>
+            <li style="font-size:200%;">Cooking</li>
+          </ul>
+        </div>
+        
+        <script>
+            pass = 'lab1pass';
+            var x = document.getElementById('content')
+            var passinput = prompt("Enter the password")
+            if(passinput == pass){
+                x.style.visibility = 'visible';
+              } 
+              else {
+                x.style.visibility = 'hidden';
+                alert("access denied");
+              }
+            
+          </script>
+        
+          <p><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fstarxie.github.io.%2F">Validation Link</a></p>
+          
+        </body>
+        </html>
+        
+</textarea>
+
+<h1 class="center">How did you password protect your page?</h1>
+<p class="center">I used javascript to give a password prompt and a if-else case to determine if the page will display.</p>
+
+<h1 class="center">What new tag did you try? What was its effect?</h1>
+<p class="center">This is my first experience with HTML so I used the simple button and img tags. The button tag allowed a button to be created and utilized and the img tag displayed an image from an image address.</p>
+
+<h1 class="center">Does your page look different in different browsers and platforms? If yes, what are the main differences?</h1>
+<p class="center">From my experience of testing it on chrome, edge, safari, and firefox, I saw only a difference on firefox where it you can see the contents behind the password prompt because the content is not blocked out like on other browsers but besides that the website works like any other browser. In addition, I also tested the page on pc, mac and mobile and drew the conclusion that there was no differences.</p>
+
+<h1 class="center">How long did you spend on this lab?</h1>
+<p class="center">With my inexperience with HTML I had a slow start so it took approx. 4-5 hours for me to do this lab.</p>
+
+</body>
+</html>
