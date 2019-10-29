@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="lab04.css">
+</head>
+<body class="body"> 
+<h2 class="center">NBA Survey</h2>
+
+<form class="center" action="http://www2.scs.ryerson.ca/~j25hoang/cgi-bin/lab04form.cgi" method="get">
+<fieldset>
+    <legend>Personal Information</legend>
+    First name: <input type="text" name="first"><br>
+    Last name: <input type="text" name="last"><br>
+</fieldset>
+<fieldset>
+    <legend>Age Range</legend>
+    <div>Choose your age range below:</div>
+    <select name="cars">
+            <option value="child">Child (0-14 years)</option>
+            <option value="youth">Youth (15-24 years)</option>
+            <option value="adult">Adult (25-64 years)</option>
+            <option value="senior">Senior (65+ years)</option>
+          </select>    
+</fieldset>
+<fieldset>
+    <legend>Which NBA Team will be this year's champion</legend>
+    <p>Select the NBA Team you think will win: </p>
+        <div class="cc-selector">
+            <input id="raptors" type="radio" name="team" value="raptors" checked="checked"/>
+                <label class="drinkcard-cc raptors" for="raptors"></label>
+            <input id="rockets" type="radio" name="team" value="rockets" />
+                <label class="drinkcard-cc rockets"for="rockets"></label>
+            <input id="bucks" type="radio" name="team" value="bucks" />
+                <label class="drinkcard-cc bucks" for="bucks"></label>
+            <input id="warriors" type="radio" name="team" value="warriors" />
+                <label class="drinkcard-cc warriors" for="warriors"></label>
+            <input id="lakers" type="radio" name="team" value="lakers" />
+                <label class="drinkcard-cc lakers" for="lakers"></label>
+            <input id="clippers" type="radio" name="team" value="clippers" />
+                <label class="drinkcard-cc clippers" for="clippers"></label>
+        </div>
+</fieldset>
+<br><br>
+<input type="submit">
+</form>
+
+<small><a href="https://github.com/Starxie">
+    &copy; Created by Justtin Hoang</a></small>
+
+
+</body>
+</html>
