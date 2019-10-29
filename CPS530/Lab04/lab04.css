@@ -36,10 +36,6 @@
             filter: brightness(1.2) grayscale(.5) opacity(.9);
 }
 
-.fakeRadio input[type=radio]:checked, .fakeRadio.active {
-    opacity:0;
-}
-
 .center{
     text-align: center;
 }
