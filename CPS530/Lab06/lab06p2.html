@@ -24,11 +24,17 @@ function checkForm()
       {
           return true;
       }
-      else
+      else if(nameCheck == false)
       {
-          alert("Check Name and Phone #");
-      return false;
+          alert("Name can only cantain letters and spaces");
+          return false;
       }
+      else if(numCheck == false)
+      {
+          alert("Phone # Must Follow: XXX-XXX-XXXX");
+          return false;
+      }
+      else{return false}
       }
 
     function doPreview()
@@ -56,11 +62,17 @@ function checkForm()
         form.submit();
         return true;
       }
-      else
+      else if(nameCheck == false)
       {
-          alert("Check Name and Phone #");
-      return false;
+          alert("Name can only cantain letters and spaces");
+          return false;
       }
+      else if(numCheck == false)
+      {
+          alert("Phone # Must Follow: XXX-XXX-XXXX");
+          return false;
+      }
+      else{return false}
     }
 </script>
 </head>
