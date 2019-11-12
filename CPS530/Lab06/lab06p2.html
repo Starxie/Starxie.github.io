@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="lab04.css">
+<script>  
+function checkForm()
+      { 
+      var letters = /^[A-Za-z\s]+$/;
+      var num = /^\d{3}-\d{3}-\d{4}$/;
+      var name = document.getElementById("name");
+      var number = document.getElementById("phone");
+      var nameCheck = false;
+      var numCheck = false;
+      form.action='http://www2.scs.ryerson.ca/~j25hoang/cgi-bin/test.rb';
+      if(name.value.match(letters))
+      {
+      nameCheck = true;
+      }
+      if(number.value.match(num))
+      {
+      numCheck = true;
+      }
+      if(nameCheck == true && numCheck == true)
+      {
+          return true;
+      }
+      else
+      {
+          alert("Check Name and Phone #");
+      return false;
+      }
+      }
+
+    function doPreview()
+    {
+        var letters = /^[A-Za-z\s]+$/;
+      var num = /^\d{3}-\d{3}-\d{4}$/;
+      var name = document.getElementById("name");
+      var number = document.getElementById("phone");
+      var nameCheck = false;
+      var numCheck = false;
+      form.action='http://www2.scs.ryerson.ca/~j25hoang/cgi-bin/test.rb';
+      if(name.value.match(letters))
+      {
+      nameCheck = true;
+      }
+      if(number.value.match(num))
+      {
+      numCheck = true;
+      }
+      if(nameCheck == true && numCheck == true)
+      {
+        form=document.getElementById('form');
+        form.target='_blank';
+        form.action='http://www2.scs.ryerson.ca/~j25hoang/cgi-bin/lab06py.py';
+        form.submit();
+        return true;
+      }
+      else
+      {
+          alert("Check Name and Phone #");
+      return false;
+      }
+    }
+</script>
+</head>
+<body class="body"  onload='document.form1.fname.focus()'> 
+<h2 class="center">Give Me Your Information</h2>
+
+<form id="form" name="form1" action="http://www2.scs.ryerson.ca/~j25hoang/cgi-bin/test.rb">
+<fieldset>
+    <legend>Personal Information</legend>
+    Name: <input id="name" type="text" name="fname" onKeyUp="checkInput()"><br>
+    Address: <input type="text" name="faddress" onKeyUp="phoneno(document.form1.faddress)"><br>
+    Phone #: <input id="phone" type="text" name="fphone" onKeyUp="checkInput()"><br>
+</fieldset>
+
+<br><br>
+<input type="submit" name="submit" value="Ruby" onclick="return checkForm()" />
+<button onclick="return doPreview()">Python</button>
+</form>
+
+<small><a href="https://github.com/Starxie">
+    &copy; Created by Justtin Hoang</a></small>
+</body>
+</html>
+
