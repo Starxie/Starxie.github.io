@@ -1,0 +1,64 @@
+<!doctype html>
+ 
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="lab07.css">
+    <title>Justtin's Mr.Potato Head Game</title>
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    
+    <style>
+    #draggable { width: 150px; height: 150px; padding: 0.5em; }
+    .center {
+    margin:  0px 300px;
+    width: 50%;
+    }   
+    </style>
+    <script>
+    $(function() {
+        $( ".ui-widget-content" ).draggable();
+    });
+    </script>
+</head>
+<body style="background-color: #2C2F33;">
+<div >
+        <h1 style="text-align:center; color: azure;">Justtin's Mr.Potato Game</h1>
+        <br><br>
+    <div class="parent">
+        <span class="center" style="text-align:right;width: 10%;">
+            <img src="mrpotatohead.gif">
+        </span>
+        <span style="text-align:center; width: 15%;">
+            <div id="draggable" class="ui-widget-content">
+                <img src="hat1.gif">
+            </div>
+            <div id="draggable" class="ui-widget-content">
+            <img src="eyes1.gif">
+            </div>
+            <div id="draggable" class="ui-widget-content">
+            <img src="nose1.gif">
+            </div>
+            <div id="draggable" class="ui-widget-content">
+            <img src="mouth1.gif">
+            </div>                            
+        </span>
+        
+        <span style="text-align:center;width: 15%;">
+             <div id="draggable" class="ui-widget-content">
+            <img src="hat2.gif">
+            </div>
+            <div id="draggable" class="ui-widget-content">
+             <img src="eyes2.gif">
+             </div>
+            <div id="draggable" class="ui-widget-content">
+            <img src="nose4.gif">
+            </div>
+            <div id="draggable" class="ui-widget-content">
+            <img src="mouth2.gif">
+            </div>                       
+        </span>
+    </div>
+</div>
+        
+      </body>
+</html>
